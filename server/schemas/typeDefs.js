@@ -22,15 +22,14 @@ const typeDefs = `
     user: User
   }
 
-  input userInput {
-    username: String!
+  input loginInput {
     email: String!
     password: String!
   }
 
-  input loginInput {
-    username: String
-    email: String
+  input userInput {
+    username: String!
+    email: String!
     password: String!
   }
 

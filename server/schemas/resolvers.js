@@ -9,17 +9,14 @@ const resolvers = {
   },
   Mutation: {
     login: async (_, { criteria }) => {
-      const user = await User.findOne({
-        $or: [
-          { username: criteria.username },
-          { email: criteria.email }
-        ]
-      });
+      const { email, password } = criteria;
+
+      const user = await User.findOne({ email: email });
       if (!user) {
         throw AuthenticationError;
       }
 
-      const correctPw = await user.isCorrectPassword(criteria.password);
+      const correctPw = await user.isCorrectPassword(password);
       if (!correctPw) {
         throw AuthenticationError;
       }
@@ -27,13 +24,13 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
-    }
-  },
-  addUser: async (_, { criteria }) => {
-    const user = await User.create(criteria);
-    const token = signToken(user);
+    },
+    addUser: async (_, { criteria }) => {
+      const user = await User.create(criteria);
+      const token = signToken(user);
 
-    return { token, user };
+      return { token, user };
+    }
   }
 };
 
