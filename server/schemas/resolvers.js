@@ -13,8 +13,8 @@ const resolvers = {
     }
   },
   Mutation: {
-    login: async (_, { criteria }) => {
-      const { email, password } = criteria;
+    login: async (_, { userData }) => {
+      const { email, password } = userData;
 
       const user = await User.findOne({ email: email });
       if (!user) {
@@ -30,11 +30,23 @@ const resolvers = {
 
       return { token, user };
     },
-    addUser: async (_, { criteria }) => {
-      const user = await User.create(criteria);
+    addUser: async (_, { userData }) => {
+      const user = await User.create(userData);
       const token = signToken(user);
 
       return { token, user };
+    },
+    saveBook: async (_, { bookData }, context) => {
+      if (context.user) {
+        return await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $push: { savedBooks: bookData } },
+          { new: true }
+        );
+      }
+      else {
+        throw AuthenticationError;
+      }
     }
   }
 };
