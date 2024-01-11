@@ -8,12 +8,6 @@ const resolvers = {
     }
   },
   Mutation: {
-    createUser: async (_, { criteria }) => {
-      const user = await User.create(criteria);
-      const token = signToken(user);
-
-      return { token, user };
-    },
     login: async (_, { criteria }) => {
       const user = await User.findOne({
         $or: [
@@ -34,6 +28,12 @@ const resolvers = {
 
       return { token, user };
     }
+  },
+  addUser: async (_, { criteria }) => {
+    const user = await User.create(criteria);
+    const token = signToken(user);
+
+    return { token, user };
   }
 };
 

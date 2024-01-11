@@ -39,8 +39,8 @@ const typeDefs = `
   }
 
   type Mutation {
-    createUser(criteria: userInput!): Auth
     login(criteria: loginInput!): Auth
+    addUser(criteria: userInput!): Auth
   }
 `;
 
