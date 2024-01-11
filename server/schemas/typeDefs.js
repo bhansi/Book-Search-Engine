@@ -50,6 +50,7 @@ const typeDefs = `
     login(userData: loginInput!): Auth
     addUser(userData: userInput!): Auth
     saveBook(bookData: bookInput!): User
+    removeBook(bookId: ID!): User
   }
 `;
 

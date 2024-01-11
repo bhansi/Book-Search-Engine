@@ -47,6 +47,18 @@ const resolvers = {
       else {
         throw AuthenticationError;
       }
+    },
+    removeBook: async (_, bookId, context) => {
+      if (context.user) {
+        return await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $pull: { savedBooks: bookId } },
+          { new: true }
+        );
+      }
+      else {
+        throw AuthenticationError;
+      }
     }
   }
 };
