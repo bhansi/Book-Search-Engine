@@ -22,12 +22,18 @@ const typeDefs = `
     user: User
   }
 
-  type Query {
+  input userInput {
+    username: String!
+    email: String!
+    password: String!
+  }
 
+  type Query {
+    getSingleUser(_id: ID!): User
   }
 
   type Mutation {
-
+    createUser(criteria: userInput!): Auth
   }
 `;
 
