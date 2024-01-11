@@ -11,6 +11,27 @@ const resolvers = {
     createUser: async (_, { criteria }) => {
       const user = await User.create(criteria);
       const token = signToken(user);
+
+      return { token, user };
+    },
+    login: async (_, { criteria }) => {
+      const user = await User.findOne({
+        $or: [
+          { username: criteria.username },
+          { email: criteria.email }
+        ]
+      });
+      if (!user) {
+        throw AuthenticationError;
+      }
+
+      const correctPw = await user.isCorrectPassword(criteria.password);
+      if (!correctPw) {
+        throw AuthenticationError;
+      }
+
+      const token = signToken(user);
+
       return { token, user };
     }
   }

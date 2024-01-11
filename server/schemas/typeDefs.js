@@ -28,12 +28,19 @@ const typeDefs = `
     password: String!
   }
 
+  input loginInput {
+    username: String
+    email: String
+    password: String!
+  }
+
   type Query {
     getSingleUser(_id: ID!): User
   }
 
   type Mutation {
     createUser(criteria: userInput!): Auth
+    login(criteria: loginInput!): Auth
   }
 `;
 
