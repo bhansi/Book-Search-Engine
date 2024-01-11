@@ -2,51 +2,171 @@
   {
     "username": "Brian Kernighan",
     "email": "bkernighan@techfriends.dev",
-    "password": "password01"
+    "password": "password01",
+    "savedBooks": [
+      {
+        "bookId": 1,
+        "authors": ["J.K. Rowling"],
+        "description": "A young wizard's journey at Hogwarts School of Witchcraft and Wizardry.",
+        "title": "Harry Potter and the Sorcerer's Stone"
+      },
+      {
+        "bookId": 3,
+        "authors": ["J.R.R. Tolkien"],
+        "description": "Frodo Baggins embarks on a perilous quest to destroy the One Ring and save Middle-earth.",
+        "title": "The Lord of the Rings: The Fellowship of the Ring"
+      }
+    ]
   },
   {
     "username": "Max Kanat-Alexander",
     "email": "mkanatalexander@techfriends.dev",
-    "password": "password02"
+    "password": "password02",
+    "savedBooks": [
+      {
+        "bookId": 5,
+        "authors": ["Harper Lee"],
+        "description": "A young girl in the 1930s Alabama faces racial injustice during her father's legal defense of a black man.",
+        "title": "To Kill a Mockingbird"
+      },
+      {
+        "bookId": 8,
+        "authors": ["Stephen King"],
+        "description": "A group of kids faces an ancient evil lurking in the town of Derry.",
+        "title": "It"
+      },
+      {
+        "bookId": 12,
+        "authors": ["Ray Bradbury"],
+        "description": "In a dystopian future, books are banned, and firemen burn any that are found.",
+        "title": "Fahrenheit 451"
+      }
+    ]
   },
   {
     "username": "Why The Lucky Stiff",
     "email": "wtls@techfriends.dev",
-    "password": "password03"
+    "password": "password03",
+    "savedBooks": []
   },
   {
     "username": "Kent Beck",
     "email": "kbeck@techfriends.dev",
-    "password": "password04"
+    "password": "password04",
+    "savedBooks": [
+      {
+        "bookId": 16,
+        "authors": ["John Green"],
+        "description": "Hazel Grace Lancaster and Augustus Waters navigate love and illness.",
+        "title": "The Fault in Our Stars"
+      }
+    ]
   },
   {
     "username": "Edward V. Berard",
     "email": "evberard@techfriends.dev",
-    "password": "password05"
+    "password": "password05",
+    "savedBooks": [
+      {
+        "bookId": 2,
+        "authors": ["George R.R. Martin"],
+        "description": "In the Seven Kingdoms of Westeros, noble families vie for control of the Iron Throne.",
+        "title": "A Game of Thrones"
+      },
+      {
+        "bookId": 7,
+        "authors": ["Jane Austen"],
+        "description": "Elizabeth Bennet navigates societal expectations and love in Regency-era England.",
+        "title": "Pride and Prejudice"
+      },
+      {
+        "bookId": 15,
+        "authors": ["Leo Tolstoy"],
+        "description": "The complex intertwining of Russian aristocrats' lives during the Napoleonic Wars.",
+        "title": "War and Peace"
+      }
+    ]
   },
   {
     "username": "Alan Kay",
     "email": "akay@techfriends.dev",
-    "password": "password06"
+    "password": "password06",
+    "savedBooks": [
+      {
+        "bookId": 10,
+        "authors": ["Gabriel Garcia Marquez"],
+        "description": "The magical tale of the Buendía family in the town of Macondo.",
+        "title": "One Hundred Years of Solitude"
+      },
+      {
+        "bookId": 18,
+        "authors": ["Aldous Huxley"],
+        "description": "A dystopian society where people are controlled through pleasure and conformity.",
+        "title": "Brave New World"
+      }
+    ]
   },
   {
     "username": "C.A.R. Hoare",
     "email": "choare@techfriends.dev",
-    "password": "password07"
+    "password": "password07",
+    "savedBooks": [
+      {
+        "bookId": 4,
+        "authors": ["Dan Brown"],
+        "description": "Professor Robert Langdon investigates a murder at the Louvre and uncovers ancient secrets.",
+        "title": "The Da Vinci Code"
+      },
+      {
+        "bookId": 14,
+        "authors": ["Suzanne Collins"],
+        "description": "In a post-apocalyptic world, Katniss Everdeen competes in the Hunger Games to survive.",
+        "title": "The Hunger Games"
+      }
+    ]
   },
   {
     "username": "David Thomas",
     "email": "dthomas@techfriends.dev",
-    "password": "password08"
+    "password": "password08",
+    "savedBooks": [
+      {
+        "bookId": 20,
+        "authors": ["Mark Twain"],
+        "description": "The adventures of Huck Finn and Jim as they travel down the Mississippi River.",
+        "title": "Adventures of Huckleberry Finn"
+      }
+    ]
   },
   {
     "username": "Donald Knuth",
     "email": "dknuth@techfriends.dev",
-    "password": "password09"
+    "password": "password09",
+    "savedBooks": []
   },
   {
     "username": "Lernantino",
     "email": "lernantino@techfriends.dev",
-    "password": "password10"
+    "password": "password10",
+    "savedBooks": [
+      {
+        "bookId": 6,
+        "authors": ["J.D. Salinger"],
+        "description": "Holden Caulfield, a disenchanted teenager, recounts his experiences in New York City.",
+        "title": "The Catcher in the Rye"
+      },
+      {
+        "bookId": 13,
+        "authors": ["Ernest Hemingway"],
+        "description": "The story of an aging fisherman's epic battle with a giant marlin in the Gulf Stream.",
+        "title": "The Old Man and the Sea"
+      },
+      {
+        "bookId": 17,
+        "authors": ["F. Scott Fitzgerald"],
+        "description": "Jay Gatsby's extravagant parties and unrequited love for Daisy Buchanan.",
+        "title": "The Great Gatsby"
+      }
+    ]
   }
 ]
