@@ -23,15 +23,15 @@ Go to the deployed [website](https://book-search-engine-5h89.onrender.com). Ther
 
 See below for images of the website:
 
-![Image of homepage.]()
+![Image of homepage.](./client/public/homepage.png)
 
-![Image of login form.]()
+![Image of login form.](./client/public/login.png)
 
-![Image of signup form.]()
+![Image of signup form.](./client/public/signup.png)
 
-![Image of search results.]()
+![Image of search results.](./client/public/results.png)
 
-![Image of saved books.]()
+![Image of saved books.](./client/public/saved.png)
 
 ## Questions
 
